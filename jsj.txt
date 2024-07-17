@@ -1,0 +1,198 @@
+ .brand img{
+    width: 75px;
+    height: 75px;
+ }
+ logo{
+    font-size: 75px;
+    color:#ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+color de arriba 
+     rgba(203,18,133,1)0%,
+        rgba(80,49,145,1)70%
+
+
+
+<h2>BEBIDAS ALCOHOLICAS </h2>
+        <div class="wrap column-2 carta">
+                    <div class="plato-carta">
+                </div>
+                <div class="wrap column-2 carta">
+                    <div class="plato-carta">
+                        <div class="img-plato-carta">
+                           <img src="images/sopaw.webp" alt=""> 
+                       
+                        </div> 
+                        <div class="title-plato-carta">
+                            <h4>Copa de Vino</h4>
+                            <p></p>
+                        </div>
+                        <div class="precio-plato-carta">
+                            <span>4.00$</span>
+                        </div>
+                        </div>
+                        <div class="wrap-title-section">
+
+
+        ubicacion
+        </div>
+              <
+
+
+carrusel de imagenes 
+              <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+          texto en movimiento 
+          <marquee><a href="inicio.html"class="logo">Donde la tradición culinaria china cobra vida</marquee></a>
+               
+
+               <body>
+            <div class="wrapp">
+              <div class="wrapp-texto">
+                
+                <h1>CHONG</h1>
+                <p>Restaurante Chong es un auténtico y acogedor restaurante chino que te transportará a las delicias culinarias de la lejana China sin salir de la ciudad. Ubicado en el corazón de las cumbres, este restaurante ofrece a los comensales una experiencia gastronómica inigualable.
+
+                  El ambiente es una mezcla de elegancia y tradición, con una decoración que incorpora elementos chinos icónicos y detalles que evocan la rica historia culinaria del país. Los colores cálidos y la música suave crean un ambiente relajante que invita a los visitantes a disfrutar de un viaje culinario.
+                  
+                  El menú es una fiesta para los sentidos. la variedad de sabores y texturas es impresionante. Los ingredientes frescos y las especias auténticas se combinan en cada plato para ofrecer una experiencia gastronómica única.
+                  
+                  El servicio es amable y eficiente, con un personal conocedor de la cocina china que puede ayudarte a explorar los sabores y platos que mejor se adapten a tus gustos. En R.Chong, puedes experimentar la auténtica comida china en un entorno agradable y acogedor, lo que lo convierte en un destino favorito para los amantes de la gastronomía asiática.
+                  
+                  </p>
+              </div>
+            </div>
+          </body>
+
+
+            /*inicio*/
+
+  .wrapp{
+    width: 110vw;
+    height: 110vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)),url();
+    background-size: cover;
+    background-position: center;
+    width: 1340px;
+    
+    }
+
+    .wrapp-texto{
+      color: rgb(0, 0, 0);
+      text-align: center;
+      margin:auto;
+      padding: 200px; 
+      top: -60px;
+      }
+      .img-inicio{
+        position: absolute;
+        right: 950px;
+        bottom: 300px;
+        width: 100px;
+        height: 100px;
+      }
+
+
+
+
+
+
+      <div class="column-half">
+                  <h3>Formulario de reserva</h3>
+                  <p>* campos requeridos</p>
+                  <form action="" class="formulario">
+                    <input type="text" placeholder="TU NOMBRE *">
+                    <input type="text" placeholder="ASUNTO">
+                    <input type="text" placeholder="TU EMAIL *">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="DETALLES"></textarea>
+                    <button type="submit">Enviar</button>
+                  </form>
+                </div>
+
+
+
+
+
+
+
+                <div class="column-half">
+                  <h3>Formulario de reserva</h3>
+                  <p>* campos requeridos</p>
+                  <form id="reservaForm" class="formulario">
+                      <input type="text" id="nombre" placeholder="TU NOMBRE *" required>
+                      <input type="text" id="asunto" placeholder="ASUNTO">
+                      <input type="email" id="email" placeholder="TU EMAIL *" required>
+                      <textarea id="detalles" cols="30" rows="10" placeholder="DETALLES"></textarea>
+                      <button type="submit">Enviar</button>
+                  </form>
+                  <p id="mensaje"></p>
+              </div>
+          
+              <script>
+                  document.getElementById('reservaForm').addEventListener('submit', function(event) {
+                      event.preventDefault(); // Evita el envío del formulario
+          
+                      const nombre = document.getElementById('nombre').value;
+                      const asunto = document.getElementById('asunto').value;
+                      const email = document.getElementById('email').value;
+                      const detalles = document.getElementById('detalles').value;
+                      const mensaje = document.getElementById('mensaje');
+          
+                      // Validación básica
+                      if (!nombre || !email) {
+                          mensaje.textContent = 'Por favor, completa los campos requeridos.';
+                          mensaje.style.color = 'red';
+                          return;
+                      }
+          
+                      // Preparar los datos para el envío
+                      const datos = new FormData();
+                      datos.append('nombre', nombre);
+                      datos.append('asunto', asunto);
+                      datos.append('email', email);
+                      datos.append('detalles', detalles);
+          
+                      // Enviar los datos a un archivo PHP en el servidor
+                      fetch('enviar_reserva.php', {
+                          method: 'POST',
+                          body: datos
+                      })
+                      .then(response => response.text())
+                      .then(data => {
+                          mensaje.textContent = data;
+                          mensaje.style.color = 'green';
+                      })
+                      .catch(error => {
+                          mensaje.textContent = 'Hubo un error al enviar la reserva.';
+                          mensaje.style.color = 'red';
+                      });
+                  });
+                  
+
+Visión
+Ser el destino preferido para una experiencia culinaria auténtica y memorable de la cocina asiática, reconocidos por nuestra calidad e innovación
+Misión
+                  Ofrecer auténticos sabores asiáticos con ingredientes frescos y un servicio excepcional, creando experiencias culinarias memorables en un ambiente acogedor
